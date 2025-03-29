@@ -31,7 +31,7 @@ const App = () => {
             </div>
           ) : (
             <div className="places-list">
-              {choices.places.map((place, index) => (
+              {choices.today_choices.map((place, index) => (
                 <div key={index} className="place">
                   <h3>{place}</h3>
                 </div>
@@ -40,7 +40,7 @@ const App = () => {
           )}
         </>
       ) : (
-        <p>Loading...</p>
+        <p>Bunu görüyorsanız muhtemelen bir sıkıntı var demektir. İlgileniyorum...</p>
       )}
     </div>
   );
